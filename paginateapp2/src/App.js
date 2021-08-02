@@ -1,6 +1,6 @@
 import React from "react";
 import Navigator from "./components/navigator/Navigator";
-import Page from "./components/pagenation/Page";
+import Page from "./components/pagination/Page";
 import "./App.css";
 
 export default function App() {
