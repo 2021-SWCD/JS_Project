@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navigator from "../navigator/Navigator";
 import Posts from "./Posts";
 import Pagination from "./Pagination";
 import axios from "axios";
@@ -12,7 +13,7 @@ export default function Page () {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
+  const [postsPerPage] = useState(10);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -33,11 +34,10 @@ export default function Page () {
   console.log(posts);
 
   // Change page
-  const paginate = (pageNumber) =>setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mt-5">
-      {" "}
+    <div className="container mt-3">
       {/* className은 단순히 클래스 명이다 */}
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
