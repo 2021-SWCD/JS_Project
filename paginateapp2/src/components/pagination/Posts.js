@@ -5,8 +5,7 @@ import React from "react";
  * @author 주민지
  */
 
-
-export default function Posts ({ posts, loading }) {
+export default function Posts({ posts, loading }) {
   if (loading) {
     return <h2>Loading...</h2>;
   }
@@ -21,4 +20,4 @@ export default function Posts ({ posts, loading }) {
       ))}
     </ul>
   );
-};
+}
