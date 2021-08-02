@@ -1,8 +1,8 @@
 .Nav {
-    width: 510px;
+    width: 710px;
     height: 50px;
     position: fixed;
-    background-color: darkslategray;
+    background-color: papayawhip;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,19 +10,18 @@
   
   .Nav_title {
     margin-left: 10px;
-    color: white;
+    color: green;
     font-family: "Jalnan";
   }
   
   .Navi {
     width: 300px;
     display: flex;
-  
     justify-content: space-evenly;
   }
   
   .Navs {
-    color: white;
+    color: black;
     font-family: "Jalnan";
     text-decoration: none;
   }
