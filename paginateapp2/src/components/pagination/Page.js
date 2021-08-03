@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Navigator from "../navigator/Navigator";
 import Posts from "./Posts";
 import Pagination from "./Pagination";
 import axios from "axios";
+import "../../css/pagination/Page.css";
+import Navigator from "../navigator/Navigator";
 
 /**
  * 최종 페이징 컴포넌트
