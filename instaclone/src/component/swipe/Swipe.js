@@ -1,19 +1,13 @@
-import "./App.css";
+import "../../css/swipe/Swipe.css";
 import { useState } from "react";
 import Slider from "react-slick";
-import astronaut from "./assets/astronaut.png";
-import celebrating from "./assets/celebrating.png";
-import education from "./assets/education.png";
-import taken from "./assets/taken.png";
-import one from "./assets/image1.jpg";
-import two from "./assets/image2.jpg";
-import Story from "../src/component/stories/Story";
+import astronaut from "../../assets/astronaut.png";
+import celebrating from "../../assets/celebrating.png";
+import { FaArrowLeft, FaArrowRight} from "react-icons/fa";
 
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+const images = [astronaut, celebrating];
 
-const images = [astronaut, celebrating, education, taken];
-
-function App() {
+function Swipe() {
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
@@ -57,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default Swipe;
