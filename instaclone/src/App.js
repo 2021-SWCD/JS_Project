@@ -5,13 +5,10 @@ import astronaut from "./assets/astronaut.png";
 import celebrating from "./assets/celebrating.png";
 import education from "./assets/education.png";
 import taken from "./assets/taken.png";
-import one from "./assets/image1.jpg";
-import two from "./assets/image2.jpg";
-import Story from "../src/component/stories/Story";
-
+import Story from "../src/component/stories/Story"
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-const images = [astronaut, celebrating, education, taken];
+const stories = [ "../src/component/stories/Story" ];
 
 function App() {
   const NextArrow = ({ onClick }) => {
@@ -47,9 +44,11 @@ function App() {
   return (
     <div className="App">
       <Slider {...settings}>
-        {images.map((img, idx) => (
-          <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img src={img} alt={img} />
+        {stories.map((js, idx) => (
+          <div
+            className={idx === imageIndex ? "slide activeSlide" : "slide"}
+          >
+            <Story />
           </div>
         ))}
       </Slider>

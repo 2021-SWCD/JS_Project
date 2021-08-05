@@ -1,6 +1,6 @@
 .slide {
   /* flex-direction: row; */
-  background-color: #61dafb;
+  /* background-color: #61dafb; */
   display: flex;
   justify-content: center;
 }
